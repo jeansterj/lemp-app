@@ -1,10 +1,10 @@
 FROM php:8.2.11-fpm
 
 # Install composer
-RUN echo "\e[1;33mInstall COMPOSER\e[0m"
-RUN cd /tmp \
-    && curl -sS https://getcomposer.org/installer | php \
-    && mv composer.phar /usr/local/bin/composer
+# RUN echo "\e[1;33mInstall COMPOSER\e[0m"
+# RUN cd /tmp \
+#     && curl -sS https://getcomposer.org/installer | php \
+#     && mv composer.phar /usr/local/bin/composer
 
 RUN docker-php-ext-install pdo pdo_mysql
 
